@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "QShield Cardio: temporally validated diabetes and hypertension screening models with a post-quantum protected, integrity-checked output pipeline"
+type: software
+version: 0.2.0
+license: MIT
+repository-code: "https://github.com/sunilgentyala/qshield-cardio"
+authors:
+  - family-names: Gentyala
+    given-names: Sunil
+  - family-names: Darisi
+    given-names: Suresh Kumar
+  - family-names: Shariff
+    given-names: Vahiduddin
+  - family-names: Kasturi
+    given-names: Akhila
+  - family-names: Padala
+    given-names: Krishna Reddy
+abstract: "Reproducible NHANES screening benchmark (temporal validation, robustness analyses) with a hybrid X25519 + ML-KEM-768 / ML-DSA-44 application envelope and an ISO control evidence matrix. Research software, not clinically validated."
+keywords:
+  - diabetes screening
+  - hypertension
+  - NHANES
+  - post-quantum cryptography
+  - ML-KEM
+  - ML-DSA

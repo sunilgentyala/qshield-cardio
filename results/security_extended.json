@@ -1,0 +1,85 @@
+{
+  "mutation_fuzz": {
+    "kem_ct": {
+      "trials": 400,
+      "rejected": 400
+    },
+    "ephemeral_xpk": {
+      "trials": 400,
+      "rejected": 400
+    },
+    "nonce": {
+      "trials": 400,
+      "rejected": 400
+    },
+    "ciphertext": {
+      "trials": 400,
+      "rejected": 400
+    },
+    "signature": {
+      "trials": 400,
+      "rejected": 400
+    },
+    "metadata": {
+      "trials": 400,
+      "rejected": 400
+    }
+  },
+  "mutation_fuzz_resigned": {
+    "kem_ct": {
+      "trials": 400,
+      "rejected": 400
+    },
+    "ephemeral_xpk": {
+      "trials": 400,
+      "rejected": 400
+    },
+    "nonce": {
+      "trials": 400,
+      "rejected": 400
+    },
+    "ciphertext": {
+      "trials": 400,
+      "rejected": 400
+    }
+  },
+  "aead_scaling": [
+    {
+      "payload_bytes": 64,
+      "aes_gcm_median_ms": 0.0023,
+      "aes_gcm_p95_ms": 0.0025
+    },
+    {
+      "payload_bytes": 1024,
+      "aes_gcm_median_ms": 0.0017,
+      "aes_gcm_p95_ms": 0.0018
+    },
+    {
+      "payload_bytes": 16384,
+      "aes_gcm_median_ms": 0.003,
+      "aes_gcm_p95_ms": 0.0031
+    },
+    {
+      "payload_bytes": 262144,
+      "aes_gcm_median_ms": 0.0203,
+      "aes_gcm_p95_ms": 0.024405000000000003
+    }
+  ],
+  "classical_vs_hybrid": {
+    "classical_seal_median_ms": 0.0669,
+    "classical_seal_p95_ms": 0.09682499999999998,
+    "classical_open_median_ms": 0.0805,
+    "classical_open_p95_ms": 0.08974499999999996,
+    "hybrid_seal_median_ms": 4.4346,
+    "hybrid_seal_p95_ms": 5.566504999999999,
+    "hybrid_open_median_ms": 0.19485,
+    "hybrid_open_p95_ms": 0.31720499999999996,
+    "classical_bytes": 175,
+    "hybrid_bytes": 7551,
+    "note": "Classical baseline: ephemeral X25519, AES-256-GCM with a fixed test nonce, Ed25519 signature; no metadata, replay or role checks, so it is a lower bound on classical envelope cost."
+  },
+  "environment": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "python": "3.14.4"
+  }
+}

@@ -1,0 +1,711 @@
+{
+  "seed": 20261015,
+  "replicates": 1000,
+  "design_aware": {
+    "diabetes": {
+      "selected": "HGB_full",
+      "strata": 15,
+      "psu_per_stratum": 2,
+      "cluster_unweighted": {
+        "n_rep": 1000,
+        "auroc": {
+          "point": 0.7270382179708605,
+          "ci": [
+            0.678715767860994,
+            0.765727858670059
+          ],
+          "se": 0.02225103986935302
+        },
+        "sensitivity": {
+          "point": 0.8333333333333334,
+          "ci": [
+            0.7435714285714285,
+            0.907029598308668
+          ],
+          "se": 0.04202728567158397
+        },
+        "specificity": {
+          "point": 0.5053806297329614,
+          "ci": [
+            0.4728156153634943,
+            0.5379472038267568
+          ],
+          "se": 0.01712291853784849
+        },
+        "ppv": {
+          "point": 0.04611837048424289,
+          "ci": [
+            0.03426055025607753,
+            0.059834123222748815
+          ],
+          "se": 0.006649289928412631
+        }
+      },
+      "design_weighted": {
+        "n_rep": 1000,
+        "auroc": {
+          "point": 0.7590828028109712,
+          "ci": [
+            0.6897307143436113,
+            0.804529204565784
+          ],
+          "se": 0.028918847301025192
+        },
+        "sensitivity": {
+          "point": 0.8655382509666186,
+          "ci": [
+            0.7768399880738319,
+            0.9280553710239695
+          ],
+          "se": 0.04106027677122826
+        },
+        "specificity": {
+          "point": 0.5265491152074153,
+          "ci": [
+            0.4833222849767625,
+            0.5673139992800053
+          ],
+          "se": 0.0222569639320961
+        },
+        "ppv": {
+          "point": 0.02821309874067479,
+          "ci": [
+            0.01737129061780341,
+            0.03988955892570009
+          ],
+          "se": 0.005702396924352728
+        }
+      }
+    },
+    "hypertension": {
+      "selected": "LR_core",
+      "strata": 15,
+      "psu_per_stratum": 2,
+      "cluster_unweighted": {
+        "n_rep": 1000,
+        "auroc": {
+          "point": 0.727947774768584,
+          "ci": [
+            0.7108599331988263,
+            0.744449197571585
+          ],
+          "se": 0.00882233516273722
+        },
+        "sensitivity": {
+          "point": 0.7641618497109827,
+          "ci": [
+            0.738252382323087,
+            0.7916666666666666
+          ],
+          "se": 0.013990352545947198
+        },
+        "specificity": {
+          "point": 0.6043123543123543,
+          "ci": [
+            0.5714162135442412,
+            0.6373088740273236
+          ],
+          "se": 0.017339594821535527
+        },
+        "ppv": {
+          "point": 0.49328358208955225,
+          "ci": [
+            0.46521116034339516,
+            0.5228658536585366
+          ],
+          "se": 0.015216865367768027
+        }
+      },
+      "design_weighted": {
+        "n_rep": 1000,
+        "auroc": {
+          "point": 0.711738840755322,
+          "ci": [
+            0.6849782644817698,
+            0.7369730359223989
+          ],
+          "se": 0.013457225698672312
+        },
+        "sensitivity": {
+          "point": 0.746073926879398,
+          "ci": [
+            0.7024917640135728,
+            0.7877946413087741
+          ],
+          "se": 0.023531080255934197
+        },
+        "specificity": {
+          "point": 0.6007094390740682,
+          "ci": [
+            0.5672008316591157,
+            0.6334747462717328
+          ],
+          "se": 0.018052863626770665
+        },
+        "ppv": {
+          "point": 0.4212057671338894,
+          "ci": [
+            0.37487742721945855,
+            0.46361585129684085
+          ],
+          "se": 0.022668792568372745
+        }
+      }
+    }
+  },
+  "paired_auroc": {
+    "diabetes": [
+      {
+        "a": "HGB_full",
+        "b": "LR_core",
+        "delta": 0.003609228997830116,
+        "ci": [
+          -0.04794590920457384,
+          0.057427124114370134
+        ],
+        "excludes_zero": false
+      },
+      {
+        "a": "LR_full",
+        "b": "LR_core",
+        "delta": -0.019609959700633173,
+        "ci": [
+          -0.03306261783876538,
+          -0.0062400078162773345
+        ],
+        "excludes_zero": true
+      },
+      {
+        "a": "LR_core",
+        "b": "LR_age",
+        "delta": 0.0754533678756476,
+        "ci": [
+          0.012970675586527727,
+          0.1411517022780054
+        ],
+        "excludes_zero": true
+      },
+      {
+        "a": "HGB_full",
+        "b": "LR_age",
+        "delta": 0.07906259687347772,
+        "ci": [
+          0.011396084789009112,
+          0.14492511942548272
+        ],
+        "excludes_zero": true
+      }
+    ],
+    "hypertension": [
+      {
+        "a": "LR_core",
+        "b": "LR_full",
+        "delta": 0.0005409811768192219,
+        "ci": [
+          -0.002926287804314551,
+          0.0037531007989843293
+        ],
+        "excludes_zero": false
+      },
+      {
+        "a": "LR_core",
+        "b": "HGB_full",
+        "delta": 0.008491316005766802,
+        "ci": [
+          -0.003915784679058405,
+          0.02041605329977146
+        ],
+        "excludes_zero": false
+      },
+      {
+        "a": "LR_core",
+        "b": "LR_age",
+        "delta": 0.02584380936982089,
+        "ci": [
+          0.012186570921924073,
+          0.039490051728782116
+        ],
+        "excludes_zero": true
+      },
+      {
+        "a": "LR_full",
+        "b": "LR_age",
+        "delta": 0.02530282819300167,
+        "ci": [
+          0.012229350615759254,
+          0.03962265508610631
+        ],
+        "excludes_zero": true
+      }
+    ]
+  },
+  "rule_baselines": {
+    "diabetes": [
+      {
+        "rule": "Age 35 or older and BMI 25 or higher",
+        "referral": 0.454087562960093,
+        "sensitivity": 0.75,
+        "ppv": 0.04607508532423208,
+        "model_sensitivity_at_same_referral": 0.7777777777777778,
+        "model_ppv_at_same_referral": 0.04778156996587031
+      },
+      {
+        "rule": "Age 45 or older",
+        "referral": 0.4571871367686943,
+        "sensitivity": 0.6944444444444444,
+        "ppv": 0.0423728813559322,
+        "model_sensitivity_at_same_referral": 0.7777777777777778,
+        "model_ppv_at_same_referral": 0.04745762711864407
+      },
+      {
+        "rule": "BMI 30 or higher",
+        "referral": 0.3409531189461449,
+        "sensitivity": 0.5555555555555556,
+        "ppv": 0.045454545454545456,
+        "model_sensitivity_at_same_referral": 0.6944444444444444,
+        "model_ppv_at_same_referral": 0.056818181818181816
+      },
+      {
+        "rule": "Age-only logistic model, validation 80% threshold",
+        "referral": 0.3889965129794653,
+        "sensitivity": 0.625,
+        "ppv": 0.044820717131474105,
+        "auroc": 0.6479756210973828
+      }
+    ],
+    "hypertension": [
+      {
+        "rule": "Age 40 or older",
+        "referral": 0.5548237117396358,
+        "sensitivity": 0.7468208092485549,
+        "ppv": 0.4511173184357542,
+        "model_sensitivity_at_same_referral": 0.7942196531791907,
+        "model_ppv_at_same_referral": 0.4797486033519553
+      },
+      {
+        "rule": "Age 50 or older",
+        "referral": 0.3793103448275862,
+        "sensitivity": 0.5815028901734104,
+        "ppv": 0.5137895812053116,
+        "model_sensitivity_at_same_referral": 0.6046242774566474,
+        "model_ppv_at_same_referral": 0.5342185903983657
+      },
+      {
+        "rule": "BMI 30 or higher",
+        "referral": 0.3409531189461449,
+        "sensitivity": 0.4046242774566474,
+        "ppv": 0.3977272727272727,
+        "model_sensitivity_at_same_referral": 0.5468208092485549,
+        "model_ppv_at_same_referral": 0.5375
+      },
+      {
+        "rule": "Age-only logistic model, validation 80% threshold",
+        "referral": 0.6338628438589694,
+        "sensitivity": 0.8080924855491329,
+        "ppv": 0.42726161369193155,
+        "auroc": 0.7021039653987631
+      }
+    ]
+  },
+  "target_sweep": {
+    "diabetes": [
+      {
+        "target": 0.7,
+        "threshold": 0.017656188717634764,
+        "val_positives": 12,
+        "sensitivity": 0.7638888888888888,
+        "specificity": 0.5791151853328019,
+        "ppv": 0.04950495049504951,
+        "referral": 0.4304533126695079
+      },
+      {
+        "target": 0.8,
+        "threshold": 0.015125165259470127,
+        "val_positives": 12,
+        "sensitivity": 0.8333333333333334,
+        "specificity": 0.5053806297329614,
+        "ppv": 0.04611837048424289,
+        "referral": 0.5040681906237893
+      },
+      {
+        "target": 0.9,
+        "threshold": 0.01328530548111547,
+        "val_positives": 12,
+        "sensitivity": 0.875,
+        "specificity": 0.43842168194499803,
+        "ppv": 0.042798913043478264,
+        "referral": 0.5703215807826424
+      },
+      {
+        "target": 0.95,
+        "threshold": 0.009826397501152665,
+        "val_positives": 12,
+        "sensitivity": 0.9444444444444444,
+        "specificity": 0.30689517736149863,
+        "ppv": 0.03763143331488655,
+        "referral": 0.7001162340178225
+      }
+    ],
+    "hypertension": [
+      {
+        "target": 0.7,
+        "threshold": 0.2808746199284971,
+        "val_positives": 166,
+        "sensitivity": 0.6797687861271676,
+        "specificity": 0.6847319347319347,
+        "ppv": 0.520814880425155,
+        "referral": 0.4374273537388609
+      },
+      {
+        "target": 0.8,
+        "threshold": 0.24115886068336023,
+        "val_positives": 166,
+        "sensitivity": 0.7641618497109827,
+        "specificity": 0.6043123543123543,
+        "ppv": 0.49328358208955225,
+        "referral": 0.5191786129407207
+      },
+      {
+        "target": 0.9,
+        "threshold": 0.17277114928250045,
+        "val_positives": 166,
+        "sensitivity": 0.884393063583815,
+        "specificity": 0.40559440559440557,
+        "ppv": 0.42857142857142855,
+        "referral": 0.6915924060441689
+      },
+      {
+        "target": 0.95,
+        "threshold": 0.13840927092292407,
+        "val_positives": 166,
+        "sensitivity": 0.9294797687861271,
+        "specificity": 0.28088578088578087,
+        "ppv": 0.39450441609421,
+        "referral": 0.7896164277411856
+      }
+    ]
+  },
+  "repeated_splits": {
+    "diabetes": {
+      "n_seeds": 30,
+      "selected_counts": {
+        "LR_core": 17,
+        "HGB_full": 9,
+        "LR_full": 4
+      },
+      "auroc": {
+        "mean": 0.7254063150436207,
+        "sd": 0.01072443954623912,
+        "min": 0.6986875027678137,
+        "max": 0.7513036402285107,
+        "q025": 0.6988400092998539,
+        "q975": 0.7438910201053984
+      },
+      "sensitivity": {
+        "mean": 0.7587962962962964,
+        "sd": 0.10137434507909629,
+        "min": 0.5555555555555556,
+        "max": 0.9166666666666666,
+        "q025": 0.5756944444444445,
+        "q975": 0.9065972222222222
+      },
+      "ppv": {
+        "mean": 0.051496530213921324,
+        "sd": 0.0048168564889188555,
+        "min": 0.04317548746518106,
+        "max": 0.0641399416909621,
+        "q025": 0.04375200655459035,
+        "q975": 0.06127733485420746
+      },
+      "referral": {
+        "mean": 0.41822291101640197,
+        "sd": 0.08727065656364705,
+        "min": 0.2638512204571871,
+        "max": 0.5815575358388222,
+        "q025": 0.2652557148392096,
+        "q975": 0.566669895389384
+      },
+      "threshold": {
+        "mean": 0.020966530737836785,
+        "sd": 0.005047206429735162,
+        "min": 0.009382085880858,
+        "max": 0.03098121480034535,
+        "q025": 0.012633292525947656,
+        "q975": 0.02962589564086257
+      }
+    },
+    "hypertension": {
+      "n_seeds": 30,
+      "selected_counts": {
+        "LR_core": 11,
+        "HGB_full": 10,
+        "LR_full": 9
+      },
+      "auroc": {
+        "mean": 0.7260485580572287,
+        "sd": 0.006234555256464587,
+        "min": 0.7152616651171564,
+        "max": 0.7336183084737998,
+        "q025": 0.7153070893461065,
+        "q975": 0.7334312387997359
+      },
+      "sensitivity": {
+        "mean": 0.7992292870905586,
+        "sd": 0.02924859955725508,
+        "min": 0.7341040462427746,
+        "max": 0.8578034682080925,
+        "q025": 0.745,
+        "q975": 0.8544508670520231
+      },
+      "ppv": {
+        "mean": 0.4693044300277344,
+        "sd": 0.013077115768140815,
+        "min": 0.4469879518072289,
+        "max": 0.4969604863221885,
+        "q025": 0.4489223121378572,
+        "q975": 0.49244079525328494
+      },
+      "referral": {
+        "mean": 0.5716776443239054,
+        "sd": 0.03580415906779415,
+        "min": 0.501356063541263,
+        "max": 0.6431615652847733,
+        "q025": 0.507535838822162,
+        "q975": 0.6358581944982565
+      },
+      "threshold": {
+        "mean": 0.24496205553336298,
+        "sd": 0.029745931710556006,
+        "min": 0.19625779737560928,
+        "max": 0.3249337834546661,
+        "q025": 0.20271246140381935,
+        "q975": 0.3098835301523521
+      }
+    }
+  },
+  "reverse_cycle": {
+    "diabetes": {
+      "selected": "LR_core",
+      "dev_positives": 72,
+      "eval_n": 2877,
+      "eval_positives": 61,
+      "auroc": 0.7671851713859911,
+      "ap": 0.05294224665005583,
+      "sensitivity": 0.7540983606557377,
+      "specificity": 0.6661931818181818,
+      "ppv": 0.04665314401622718,
+      "referral": 0.34271810914146683,
+      "threshold": 0.027987283493408323
+    },
+    "hypertension": {
+      "selected": "LR_full",
+      "dev_positives": 865,
+      "eval_n": 2877,
+      "eval_positives": 828,
+      "auroc": 0.7311307742907462,
+      "ap": 0.47227820476978355,
+      "sensitivity": 0.7777777777777778,
+      "specificity": 0.5749145924841386,
+      "ppv": 0.4250825082508251,
+      "referral": 0.5265901981230449,
+      "threshold": 0.26762305404400316
+    }
+  },
+  "calibration": {
+    "diabetes": {
+      "slope": 0.8752218818249796,
+      "slope_ci": [
+        0.6478188479980631,
+        1.1085743044944039
+      ],
+      "intercept": -0.2068629489163736,
+      "intercept_ci": [
+        -1.05579626481672,
+        0.6321319897815767
+      ],
+      "ece8": 0.008926398010222217,
+      "mean_predicted": 0.022543348203260257,
+      "observed": 0.027896164277411855
+    },
+    "hypertension": {
+      "slope": 0.8533128311761763,
+      "slope_ci": [
+        0.7121853246247899,
+        0.9931493064244526
+      ],
+      "intercept": 0.1337962107871584,
+      "intercept_ci": [
+        -0.0123458109756685,
+        0.28827777602568416
+      ],
+      "ece8": 0.04957658625480792,
+      "mean_predicted": 0.28725753073019467,
+      "observed": 0.33514141805501746
+    }
+  },
+  "age_specific_threshold_bp": {
+    "threshold_under50": 0.17545954833385258,
+    "threshold_50plus": 0.37765980492609424,
+    "val_positives_under50": 85,
+    "val_positives_50plus": 81,
+    "overall": {
+      "sensitivity": 0.7352601156069364,
+      "specificity": 0.5238927738927739,
+      "ppv": 0.4377150722642808,
+      "referral": 0.5629600929872143
+    },
+    "under50": {
+      "sensitivity": 0.7348066298342542,
+      "specificity": 0.5733870967741935,
+      "ppv": 0.33459119496855344,
+      "referral": 0.49625468164794007
+    },
+    "50plus": {
+      "sensitivity": 0.73558648111332,
+      "specificity": 0.3949579831932773,
+      "ppv": 0.5623100303951368,
+      "referral": 0.6721144024514811
+    }
+  },
+  "net_benefit": {
+    "diabetes": [
+      {
+        "threshold": 0.01,
+        "model": 0.0196228069145543,
+        "refer_all": 0.018076933613547327,
+        "refer_none": 0.0
+      },
+      {
+        "threshold": 0.02,
+        "model": 0.012706671200056932,
+        "refer_all": 0.008057310487154953,
+        "refer_none": 0.0
+      },
+      {
+        "threshold": 0.03,
+        "model": 0.0079206892557428,
+        "refer_all": -0.002168902806791901,
+        "refer_none": 0.0
+      },
+      {
+        "threshold": 0.05,
+        "model": -8.156773180529805e-05,
+        "refer_all": -0.023267195497461212,
+        "refer_none": 0.0
+      }
+    ],
+    "hypertension": [
+      {
+        "threshold": 0.2,
+        "model": 0.19595118171251452,
+        "refer_all": 0.1689267725687718,
+        "refer_none": 0.0
+      },
+      {
+        "threshold": 0.3,
+        "model": 0.1330049261083744,
+        "refer_all": 0.05020202579288202,
+        "refer_none": 0.0
+      },
+      {
+        "threshold": 0.4,
+        "model": 0.07309828231951437,
+        "refer_all": -0.10809763657497096,
+        "refer_none": 0.0
+      },
+      {
+        "threshold": 0.5,
+        "model": 0.023634250290585038,
+        "refer_all": -0.32971716388996514,
+        "refer_none": 0.0
+      }
+    ]
+  },
+  "alt_endpoints": {
+    "hba1c_5p7": {
+      "auroc": 0.6888472209518581,
+      "ap": 0.42890635150857553,
+      "sensitivity": 0.7042440318302388,
+      "specificity": 0.578544061302682,
+      "ppv": 0.4081475787855496,
+      "positives": 754
+    },
+    "sbp_130": {
+      "auroc": 0.7691749646718591,
+      "ap": 0.47086266130483795,
+      "sensitivity": 0.8357487922705314,
+      "specificity": 0.5811224489795919,
+      "ppv": 0.38731343283582087,
+      "positives": 621
+    }
+  },
+  "planning": [
+    {
+      "prevalence": 0.028,
+      "sensitivity": 0.8,
+      "half_width": 0.05,
+      "positives": 246,
+      "recruits_10pct_nonevaluable": 9762
+    },
+    {
+      "prevalence": 0.028,
+      "sensitivity": 0.8,
+      "half_width": 0.075,
+      "positives": 110,
+      "recruits_10pct_nonevaluable": 4366
+    },
+    {
+      "prevalence": 0.028,
+      "sensitivity": 0.9,
+      "half_width": 0.05,
+      "positives": 139,
+      "recruits_10pct_nonevaluable": 5516
+    },
+    {
+      "prevalence": 0.05,
+      "sensitivity": 0.8,
+      "half_width": 0.05,
+      "positives": 246,
+      "recruits_10pct_nonevaluable": 5467
+    },
+    {
+      "prevalence": 0.05,
+      "sensitivity": 0.8,
+      "half_width": 0.075,
+      "positives": 110,
+      "recruits_10pct_nonevaluable": 2445
+    },
+    {
+      "prevalence": 0.05,
+      "sensitivity": 0.9,
+      "half_width": 0.05,
+      "positives": 139,
+      "recruits_10pct_nonevaluable": 3089
+    },
+    {
+      "prevalence": 0.1,
+      "sensitivity": 0.8,
+      "half_width": 0.05,
+      "positives": 246,
+      "recruits_10pct_nonevaluable": 2734
+    },
+    {
+      "prevalence": 0.1,
+      "sensitivity": 0.8,
+      "half_width": 0.075,
+      "positives": 110,
+      "recruits_10pct_nonevaluable": 1223
+    },
+    {
+      "prevalence": 0.1,
+      "sensitivity": 0.9,
+      "half_width": 0.05,
+      "positives": 139,
+      "recruits_10pct_nonevaluable": 1545
+    }
+  ],
+  "selected_models": {
+    "diabetes": "HGB_full",
+    "hypertension": "LR_core"
+  }
+}

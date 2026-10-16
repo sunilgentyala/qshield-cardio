@@ -1,0 +1,11 @@
+control_ids,purpose,evidence,status,proposed_owner
+5.9,Asset inventory,Model and data-source manifests,Partial prototype,Security lead
+5.15 5.18,Access policy and rights,Local role rejection tests,Local test only,Identity lead
+5.24–5.26,Incident preparation assessment response,Clinical and security escalation plan,Proposed,SOC lead
+5.34,Personal data safeguards,Public deidentified data and data minimization,Research scope only,Privacy officer
+8.9,Configuration control,Pinned packages and fixed model settings,Implemented artifact,ML platform lead
+8.13,Recovery capability,Versioned artifacts and proposed restore exercise,Proposed restore,Infrastructure lead
+8.15 8.16,Event recording and monitoring,Recorded software results; proposed protected operational audit,Partial prototype,SOC lead
+8.24,Cryptographic protection,Hybrid envelope and rejection tests,Research harness,Cryptography lead
+8.25 8.29,Development assurance and testing,Source code and regression tests,Implemented artifact,Engineering lead
+8.32,Change control,Git history and threshold manifest,Local artifact,Model owner
