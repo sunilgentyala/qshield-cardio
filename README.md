@@ -9,12 +9,12 @@
 [![Tests](https://img.shields.io/badge/tests-27%20passing-22c55e?style=flat-square)](tests/)
 [![Data](https://img.shields.io/badge/data-public%20NHANES-0a66c2?style=flat-square)](data/sources.json)
 [![Status](https://img.shields.io/badge/status-research%20only-f59e0b?style=flat-square)](#scope-stated-plainly)
-[![Website](https://img.shields.io/badge/Website-Live-6366f1?style=flat-square&logo=github)](https://sunilgentyala.github.io/qshield-cardio/)
+[![Website](https://img.shields.io/badge/Website-Live-6366f1?style=flat-square&logo=github)](https://sunilgentyala.com/qshield-cardio/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)](LICENSE)
 
 </div>
 
-**Project page:** https://sunilgentyala.github.io/qshield-cardio/
+**Project page:** https://sunilgentyala.com/qshield-cardio/
 
 > **Research software. The models have not established clinical safety or effectiveness.** They must not determine eligibility for routine blood-pressure checks, diagnose disease, prescribe treatment or override clinical judgment.
 
