@@ -91,7 +91,7 @@ Obtain `TRUSTED_DIGEST` through an independently authenticated channel; hashing 
 
 ## Authors
 
-Sunil Gentyala, Suresh Kumar Darisi, Vahiduddin Shariff, Akhila Kasturi, Krishna Reddy Padala.
+Sunil Gentyala, Suresh Kumar Darisi, Vahiduddin Shariff, Akhila Kasturi, S. M. Krishna Reddy Padala.
 
 ## Transparency
 

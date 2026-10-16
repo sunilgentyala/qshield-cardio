@@ -15,7 +15,7 @@ authors:
   - family-names: Kasturi
     given-names: Akhila
   - family-names: Padala
-    given-names: Krishna Reddy
+    given-names: S. M. Krishna Reddy
 abstract: "Reproducible NHANES screening benchmark (temporal validation, robustness analyses) with a hybrid X25519 + ML-KEM-768 / ML-DSA-44 application envelope and an ISO control evidence matrix. Research software, not clinically validated."
 keywords:
   - diabetes screening
