@@ -128,5 +128,13 @@ class SecurityFuzz(unittest.TestCase):
         self.assertGreater(c['hybrid_bytes'], 10 * c['classical_bytes'])
 
 
+class RejectionCost(unittest.TestCase):
+    def test_role_gate_is_cheapest_and_all_cases_present(self):
+        R = json.loads((ROOT / 'results/security_rejection.json').read_text())
+        cases = [k for k in R if k != 'environment']
+        self.assertEqual(len(cases), 8)
+        self.assertLess(R['unauthorized role']['median_ms'], 0.1 * R['valid message accepted']['median_ms'])
+
+
 if __name__ == '__main__':
     unittest.main()

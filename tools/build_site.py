@@ -210,7 +210,7 @@ footer{{border-top:1px solid var(--border);padding:2.5rem 0;color:var(--muted);f
 <div class="metric"><b>{f3(D["auroc"])}</b><span>HbA1c AUROC, temporal test</span></div>
 <div class="metric"><b>{f3(H["auroc"])}</b><span>Blood-pressure AUROC, temporal test</span></div>
 <div class="metric"><b>{MT + 1200:,}</b><span>functional + mutation security trials, all as expected</span></div>
-<div class="metric"><b>27</b><span>regression tests, CI regenerates all results from raw CDC files</span></div>
+<div class="metric"><b>28</b><span>regression tests, CI regenerates all results from raw CDC files</span></div>
 </div>
 <div class="note"><strong>Research only.</strong> These models have not established clinical safety or effectiveness and must not determine eligibility for blood-pressure checks, diagnose disease or override clinical judgment.</div>
 </div></section>
@@ -257,7 +257,7 @@ footer{{border-top:1px solid var(--border);padding:2.5rem 0;color:var(--muted);f
 <section id="reproduce"><div class="wrap">
 <span class="eyebrow">Reproduce</span>
 <h2>Every number regenerates from raw CDC files</h2>
-<p class="lead">CI downloads the 16 public NHANES files, validates their digests, reruns everything and executes the 27 tests on every push.</p>
+<p class="lead">CI downloads the 16 public NHANES files, validates their digests, reruns everything and executes the 28 tests on every push.</p>
 <pre>python -m venv .venv &amp;&amp; source .venv/bin/activate
 python -m pip install -r requirements.txt
 python src/study.py              # primary study

@@ -6,7 +6,7 @@
 
 [![CI](https://github.com/sunilgentyala/qshield-cardio/actions/workflows/ci.yml/badge.svg)](https://github.com/sunilgentyala/qshield-cardio/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![Tests](https://img.shields.io/badge/tests-27%20passing-22c55e?style=flat-square)](tests/)
+[![Tests](https://img.shields.io/badge/tests-28%20passing-22c55e?style=flat-square)](tests/)
 [![Data](https://img.shields.io/badge/data-public%20NHANES-0a66c2?style=flat-square)](data/sources.json)
 [![Status](https://img.shields.io/badge/status-research%20only-f59e0b?style=flat-square)](#scope-stated-plainly)
 [![Website](https://img.shields.io/badge/Website-Live-6366f1?style=flat-square&logo=github)](https://sunilgentyala.com/qshield-cardio/)
@@ -67,7 +67,7 @@ python -m unittest discover -s tests -v
 | `src/extended.py` | Robustness analyses listed above |
 | `src/security.py`, `src/security_extended.py` | Hybrid envelope, functional trials, mutation fuzz, cost comparison |
 | `src/infer.py` | Research inference after checking a trusted manifest digest |
-| `tests/` | 27 regression tests (cohort rules, digests, thresholds, envelope, extended-result consistency, fuzz) |
+| `tests/` | 28 regression tests (cohort rules, digests, thresholds, envelope, extended-result consistency, fuzz) |
 | `results/` | Numerical outputs, predictions, split manifest |
 | `tools/build_site.py` | Generates the project page (`docs/index.html`) from `results/` |
 | `docs/iso_control_matrix.csv` | Proposed ISO/IEC 27002 control evidence matrix |

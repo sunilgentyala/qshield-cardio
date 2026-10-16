@@ -1,0 +1,46 @@
+{
+  "valid message accepted": {
+    "median_ms": 0.1894,
+    "p95_ms": 0.20741500000000004,
+    "n": 300
+  },
+  "unauthorized role": {
+    "median_ms": 0.0003,
+    "p95_ms": 0.0006,
+    "n": 300
+  },
+  "bad signature": {
+    "median_ms": 0.0886,
+    "p95_ms": 0.10952,
+    "n": 300
+  },
+  "wrong signing key": {
+    "median_ms": 0.0877,
+    "p95_ms": 0.11262000000000001,
+    "n": 300
+  },
+  "wrong model digest (signed)": {
+    "median_ms": 0.15125,
+    "p95_ms": 0.23892,
+    "n": 300
+  },
+  "expired (signed)": {
+    "median_ms": 0.0894,
+    "p95_ms": 0.12430999999999999,
+    "n": 300
+  },
+  "corrupted KEM ciphertext (re-signed)": {
+    "median_ms": 0.1844,
+    "p95_ms": 0.27488500000000005,
+    "n": 300
+  },
+  "corrupted AEAD ciphertext (re-signed)": {
+    "median_ms": 0.1845,
+    "p95_ms": 0.24072,
+    "n": 300
+  },
+  "environment": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "python": "3.14.4"
+  }
+}
