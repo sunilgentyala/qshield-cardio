@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>QShield Cardio</title>
+<meta name="description" content="Temporally validated diabetes and hypertension screening models on NHANES with a post-quantum protected, integrity-checked output pipeline. Every number on this page is generated from the repository results." />
+<meta property="og:title" content="QShield Cardio" />
+<meta property="og:description" content="Honest, reproducible NHANES screening benchmark with a hybrid ML-KEM-768 / ML-DSA-44 envelope. Research software, not clinical." />
+<meta property="og:type" content="website" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#09101f;--surface:#111827;--surface2:#1a2236;--border:#1e2d45;--accent:#6366f1;--accent2:#22d3ee;--accent3:#a78bfa;--green:#34d399;--yellow:#fbbf24;--red:#f87171;--text:#e2e8f0;--muted:#94a3b8;--code:#0d1424;--r:14px}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font:16px/1.65 'Inter','Segoe UI',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{letter-spacing:-.02em;font-weight:700}
+h2{font-size:1.7rem;margin-bottom:.4rem}
+h3{font-size:1.05rem;color:var(--accent2);margin-bottom:.4rem}
+p{color:var(--muted);margin-bottom:1rem}
+a{color:var(--accent2);text-decoration:none}a:hover{opacity:.8}
+strong{color:var(--text)}
+code{font-family:'JetBrains Mono',monospace;font-size:.85em;background:var(--code);border:1px solid var(--border);border-radius:6px;padding:.1em .4em;color:var(--accent2)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.5rem}
+section{padding:4.5rem 0}
+section+section{border-top:1px solid var(--border)}
+.lead{max-width:740px;margin-bottom:2rem}
+.eyebrow{font:600 .75rem/1 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--accent3);margin-bottom:.8rem;display:block}
+nav{position:sticky;top:0;z-index:50;background:rgba(9,16,31,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-in{max-width:1080px;margin:0 auto;padding:.9rem 1.5rem;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.logo{font-weight:800;font-size:1.1rem}.logo span{color:var(--accent2)}
+.links{display:flex;gap:1.3rem;font-size:.9rem;flex-wrap:wrap}
+.links a{color:var(--muted)}.links a:hover{color:var(--text);opacity:1}
+#hero{padding:6rem 0 4.5rem;background:radial-gradient(900px 400px at 15% -10%,rgba(99,102,241,.25),transparent),radial-gradient(700px 380px at 90% 10%,rgba(34,211,238,.14),transparent)}
+.pill{display:inline-block;font:600 .78rem 'JetBrains Mono',monospace;color:var(--accent2);border:1px solid rgba(34,211,238,.35);background:rgba(34,211,238,.08);padding:.35rem .8rem;border-radius:99px;margin-bottom:1.2rem}
+h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.12;font-weight:800;margin-bottom:1.2rem}
+h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{font-size:1.15rem;max-width:780px;color:var(--muted);margin-bottom:2rem}
+.btns{display:flex;gap:.8rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.7rem 1.3rem;border-radius:10px;font-weight:600;font-size:.95rem}
+.btn-p{background:linear-gradient(90deg,var(--accent),#4f8df7);color:#fff}
+.btn-o{border:1px solid var(--border);color:var(--text);background:var(--surface)}
+.btn:hover{opacity:.88}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1rem;margin-top:3rem}
+.metric{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.2rem 1.3rem}
+.metric b{display:block;font-size:2rem;font-weight:800;background:linear-gradient(90deg,var(--accent3),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.2}
+.metric span{font-size:.85rem;color:var(--muted)}
+.note{border:1px solid rgba(251,191,36,.35);background:rgba(251,191,36,.07);border-radius:var(--r);padding:1rem 1.2rem;color:#e8d9a8;font-size:.95rem;margin-top:2rem}
+.note strong{color:var(--yellow)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:1.1rem}
+.g3{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.4rem}
+.card svg{width:100%;height:auto;display:block;margin-top:.6rem}
+.card p{font-size:.93rem;margin:.5rem 0 0}
+table{width:100%;border-collapse:collapse;font-size:.92rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+th,td{padding:.65rem .9rem;text-align:left;border-bottom:1px solid var(--border)}
+th{color:var(--accent3);font:600 .75rem 'JetBrains Mono',monospace;letter-spacing:.08em;text-transform:uppercase;background:var(--surface2)}
+td{color:var(--text)}
+.tag{font:600 .68rem 'JetBrains Mono',monospace;color:var(--green);border:1px solid rgba(52,211,153,.4);border-radius:99px;padding:.1rem .5rem;margin-left:.3rem}
+.tablewrap{overflow-x:auto}
+pre{background:var(--code);border:1px solid var(--border);border-radius:var(--r);padding:1.2rem;overflow-x:auto;font:.85rem/1.7 'JetBrains Mono',monospace;color:#c7d2fe}
+.pipeline svg{width:100%;height:auto}
+ul.clean{list-style:none}ul.clean li{padding:.55rem 0 .55rem 1.6rem;position:relative;color:var(--muted)}
+ul.clean li::before{content:'';position:absolute;left:0;top:1.05rem;width:8px;height:8px;border-radius:50%;background:var(--accent2)}
+footer{border-top:1px solid var(--border);padding:2.5rem 0;color:var(--muted);font-size:.9rem}
+@media(max-width:640px){.links{display:none}section{padding:3rem 0}}
+</style>
+</head>
+<body>
+<nav><div class="nav-in"><div class="logo">QShield<span>Cardio</span></div><div class="links"><a href="#results">Results</a><a href="#robustness">Robustness</a><a href="#security">Security</a><a href="#reproduce">Reproduce</a><a href="#scope">Scope</a><a href="https://github.com/sunilgentyala/qshield-cardio">GitHub</a></div></div></nav>
+
+<section id="hero"><div class="wrap">
+<span class="pill">Research software &middot; NHANES &middot; ML-KEM-768 &middot; ML-DSA-44</span>
+<h1>Screening scores you can <em>audit</em>, and outputs you can <em>trust</em>.</h1>
+<p class="sub">Two low-cost diabetes and hypertension screening models, evaluated once on a later survey cycle with frozen thresholds, wrapped in an integrity-checked, post-quantum protected output pipeline. Built to be stress-tested, and this page reports what the stress tests found.</p>
+<div class="btns"><a class="btn btn-p" href="https://github.com/sunilgentyala/qshield-cardio">View on GitHub</a><a class="btn btn-o" href="#reproduce">Reproduce the numbers</a></div>
+<div class="metrics">
+<div class="metric"><b>0.727</b><span>HbA1c AUROC, temporal test</span></div>
+<div class="metric"><b>0.728</b><span>Blood-pressure AUROC, temporal test</span></div>
+<div class="metric"><b>5,200</b><span>functional + mutation security trials, all as expected</span></div>
+<div class="metric"><b>27</b><span>regression tests, CI regenerates all results from raw CDC files</span></div>
+</div>
+<div class="note"><strong>Research only.</strong> These models have not established clinical safety or effectiveness and must not determine eligibility for blood-pressure checks, diagnose disease or override clinical judgment.</div>
+</div></section>
+
+<section id="how"><div class="wrap">
+<span class="eyebrow">How it works</span>
+<h2>One workflow, two kinds of trust</h2>
+<p class="lead">The statistical half answers whether a score ranks people sensibly on data it has never seen. The integrity half answers whether the score, and the model that produced it, arrive unaltered and confidential.</p>
+<div class="pipeline"><svg viewBox="0 0 1000 150" role="img" aria-label="Pipeline" xmlns="http://www.w3.org/2000/svg" font-family="Inter,system-ui,sans-serif" font-size="12"><rect x="10" y="30" width="140" height="70" rx="10" fill="#111827" stroke="#6366f1"/><text x="80.0" y="60" fill="#e2e8f0" text-anchor="middle" font-weight="600">Public NHANES</text><text x="80.0" y="80" fill="#94a3b8" text-anchor="middle" font-size="11">CDC XPT + SHA256</text><path d="M153 65 h13" stroke="#94a3b8" stroke-width="2"/><path d="M162 60 l6 5 -6 5" fill="none" stroke="#94a3b8" stroke-width="2"/><rect x="173" y="30" width="140" height="70" rx="10" fill="#111827" stroke="#6366f1"/><text x="243.0" y="60" fill="#e2e8f0" text-anchor="middle" font-weight="600">Frozen protocol</text><text x="243.0" y="80" fill="#94a3b8" text-anchor="middle" font-size="11">train / calibrate / select</text><path d="M316 65 h13" stroke="#94a3b8" stroke-width="2"/><path d="M325 60 l6 5 -6 5" fill="none" stroke="#94a3b8" stroke-width="2"/><rect x="336" y="30" width="140" height="70" rx="10" fill="#111827" stroke="#6366f1"/><text x="406.0" y="60" fill="#e2e8f0" text-anchor="middle" font-weight="600">Temporal test</text><text x="406.0" y="80" fill="#94a3b8" text-anchor="middle" font-size="11">2017-2018, once</text><path d="M479 65 h13" stroke="#94a3b8" stroke-width="2"/><path d="M488 60 l6 5 -6 5" fill="none" stroke="#94a3b8" stroke-width="2"/><rect x="499" y="30" width="140" height="70" rx="10" fill="#111827" stroke="#22d3ee"/><text x="569.0" y="60" fill="#e2e8f0" text-anchor="middle" font-weight="600">Manifest</text><text x="569.0" y="80" fill="#94a3b8" text-anchor="middle" font-size="11">SHA256 + thresholds</text><path d="M642 65 h13" stroke="#94a3b8" stroke-width="2"/><path d="M651 60 l6 5 -6 5" fill="none" stroke="#94a3b8" stroke-width="2"/><rect x="662" y="30" width="140" height="70" rx="10" fill="#111827" stroke="#22d3ee"/><text x="732.0" y="60" fill="#e2e8f0" text-anchor="middle" font-weight="600">Hybrid envelope</text><text x="732.0" y="80" fill="#94a3b8" text-anchor="middle" font-size="11">X25519 + ML-KEM-768</text><path d="M805 65 h13" stroke="#94a3b8" stroke-width="2"/><path d="M814 60 l6 5 -6 5" fill="none" stroke="#94a3b8" stroke-width="2"/><rect x="825" y="30" width="140" height="70" rx="10" fill="#111827" stroke="#22d3ee"/><text x="895.0" y="60" fill="#e2e8f0" text-anchor="middle" font-weight="600">Verified output</text><text x="895.0" y="80" fill="#94a3b8" text-anchor="middle" font-size="11">ML-DSA-44 + replay gates</text><text x="10" y="130" fill="#94a3b8" font-size="12">Statistical pipeline (indigo) feeds an integrity and confidentiality pipeline (cyan). Clinical deployment layer is proposed, not implemented.</text></svg></div>
+<div class="grid g3" style="margin-top:2rem">
+<div class="card"><h3>Leakage-controlled benchmark</h3><p>Development on NHANES 2015-2016 (n = 2,877) with separate training, calibration and validation partitions. The whole 2017-2018 cycle (n = 2,581) is touched once. HbA1c, glucose, blood pressure and treatment variables are never predictors.</p></div>
+<div class="card"><h3>Authenticated model trail</h3><p>A SHA256 manifest binds features, thresholds and model files. The inference tool refuses to load a model whose digest does not match a trusted value, and the digest is carried inside each signed envelope.</p></div>
+<div class="card"><h3>Hybrid post-quantum envelope</h3><p>X25519 + ML-KEM-768 key establishment, HKDF-SHA256, AES-256-GCM, ML-DSA-44 signatures, with replay, staleness, downgrade and role checks.</p></div>
+</div></div></section>
+
+<section id="results"><div class="wrap">
+<span class="eyebrow">Headline results</span>
+<h2>Moderate, stable discrimination</h2>
+<p class="lead">Frozen-threshold performance on the 2017-2018 test cohort. Validation selected one model per task; the table shows all three candidates.</p>
+<div class="tablewrap"><table><thead><tr><th>Endpoint</th><th>Model</th><th>AUROC</th><th>Sensitivity</th><th>Specificity</th><th>PPV</th></tr></thead><tbody><tr><td>HbA1c</td><td>LR_core</td><td>0.723</td><td>70.8%</td><td>59.5%</td><td>4.8%</td></tr><tr><td>HbA1c</td><td>LR_full</td><td>0.704</td><td>73.6%</td><td>55.5%</td><td>4.5%</td></tr><tr><td>HbA1c</td><td>HGB_full <span class=tag>selected</span></td><td>0.727</td><td>83.3%</td><td>50.5%</td><td>4.6%</td></tr><tr><td>Blood pressure</td><td>LR_core <span class=tag>selected</span></td><td>0.728</td><td>76.4%</td><td>60.4%</td><td>49.3%</td></tr><tr><td>Blood pressure</td><td>LR_full</td><td>0.727</td><td>77.8%</td><td>57.1%</td><td>47.7%</td></tr><tr><td>Blood pressure</td><td>HGB_full</td><td>0.719</td><td>76.4%</td><td>56.5%</td><td>47.0%</td></tr></tbody></table></div>
+<p style="margin-top:1rem">Design-aware (Rao-Wu PSU bootstrap) 95% intervals for the selected models: HbA1c AUROC 0.679 to 0.766; blood-pressure AUROC 0.711 to 0.744. HbA1c PPV is only 4.6% (about 22 referrals per detected positive).</p>
+</div></section>
+
+<section id="robustness"><div class="wrap">
+<span class="eyebrow">Robustness</span>
+<h2>What the stress tests found</h2>
+<p class="lead">Each analysis below uses models and thresholds that were already frozen. Several results are unflattering, and they are the point.</p>
+<div class="grid">
+<div class="card"><h3>The operating point is unstable</h3><svg viewBox="0 0 520 250" role="img" aria-label="Sensitivity across 30 splits" xmlns="http://www.w3.org/2000/svg" font-family="Inter,system-ui,sans-serif" font-size="12"><line x1="50" x2="500" y1="205.0" y2="205.0" stroke="#1e2d45"/><text x="42" y="209.0" fill="#94a3b8" text-anchor="end" font-size="11">50%</text><line x1="50" x2="500" y1="168.0" y2="168.0" stroke="#1e2d45"/><text x="42" y="172.0" fill="#94a3b8" text-anchor="end" font-size="11">60%</text><line x1="50" x2="500" y1="131.0" y2="131.0" stroke="#1e2d45"/><text x="42" y="135.0" fill="#94a3b8" text-anchor="end" font-size="11">70%</text><line x1="50" x2="500" y1="94.0" y2="94.0" stroke="#1e2d45"/><text x="42" y="98.0" fill="#94a3b8" text-anchor="end" font-size="11">80%</text><line x1="50" x2="500" y1="57.0" y2="57.0" stroke="#1e2d45"/><text x="42" y="61.0" fill="#94a3b8" text-anchor="end" font-size="11">90%</text><line x1="50" x2="500" y1="20.0" y2="20.0" stroke="#1e2d45"/><text x="42" y="24.0" fill="#94a3b8" text-anchor="end" font-size="11">100%</text><circle cx="125" cy="184.4" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="145" cy="174.2" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="165" cy="163.9" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="130" cy="163.9" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="150" cy="148.5" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="170" cy="138.2" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="135" cy="138.2" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="155" cy="138.2" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="175" cy="133.1" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="140" cy="127.9" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="160" cy="127.9" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="125" cy="122.8" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="145" cy="117.6" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="165" cy="112.5" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="130" cy="112.5" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="150" cy="107.4" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="170" cy="107.4" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="135" cy="97.1" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="155" cy="97.1" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="175" cy="91.9" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="140" cy="86.8" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="160" cy="76.5" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="125" cy="76.5" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="145" cy="71.4" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="165" cy="71.4" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="130" cy="66.2" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="150" cy="61.1" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="170" cy="56.0" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="135" cy="56.0" r="4" fill="#22d3ee" fill-opacity=".8"/><circle cx="155" cy="50.8" r="4" fill="#22d3ee" fill-opacity=".8"/><text x="150" y="227" fill="#e2e8f0" text-anchor="middle">HbA1c sensitivity</text><circle cx="345" cy="118.4" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="365" cy="112.8" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="385" cy="110.3" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="350" cy="109.4" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="370" cy="105.5" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="390" cy="101.3" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="355" cy="101.3" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="375" cy="98.3" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="395" cy="97.8" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="360" cy="96.6" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="380" cy="96.6" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="345" cy="96.6" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="365" cy="96.1" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="385" cy="95.7" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="350" cy="95.7" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="370" cy="94.9" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="390" cy="94.4" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="355" cy="94.0" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="375" cy="93.6" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="395" cy="91.9" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="360" cy="91.0" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="380" cy="90.6" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="345" cy="87.6" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="365" cy="87.2" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="385" cy="83.7" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="350" cy="82.5" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="370" cy="79.5" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="390" cy="78.6" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="355" cy="74.3" r="4" fill="#6366f1" fill-opacity=".8"/><circle cx="375" cy="72.6" r="4" fill="#6366f1" fill-opacity=".8"/><text x="370" y="227" fill="#e2e8f0" text-anchor="middle">Blood-pressure sensitivity</text></svg><p>AUROC barely moves across 30 re-drawn development splits (SD 0.011 for HbA1c), but HbA1c sensitivity ranges from 56% to 92% because the validation threshold rests on about a dozen events. Each dot is one split, evaluated on the full 2017-2018 cohort.</p></div>
+<div class="card"><h3>One threshold hides an age gap</h3><svg viewBox="0 0 520 230" role="img" aria-label="Blood pressure sensitivity by age group" xmlns="http://www.w3.org/2000/svg" font-family="Inter,system-ui,sans-serif" font-size="12"><text x="0" y="44" fill="#e2e8f0" font-weight="600">Under 50</text><text x="0" y="64" fill="#94a3b8" font-size="11">One threshold</text><rect x="170" y="52" width="151.7" height="15" rx="4" fill="#f87171"/><text x="329.7" y="64" fill="#e2e8f0">50.6%</text><text x="0" y="88" fill="#94a3b8" font-size="11">Age-specific thresholds</text><rect x="170" y="76" width="220.4" height="15" rx="4" fill="#34d399"/><text x="398.4" y="88" fill="#e2e8f0">73.5%</text><text x="0" y="134" fill="#e2e8f0" font-weight="600">50 or older</text><text x="0" y="154" fill="#94a3b8" font-size="11">One threshold</text><rect x="170" y="142" width="285.1" height="15" rx="4" fill="#f87171"/><text x="463.1" y="154" fill="#e2e8f0">95.0%</text><text x="0" y="178" fill="#94a3b8" font-size="11">Age-specific thresholds</text><rect x="170" y="166" width="220.7" height="15" rx="4" fill="#34d399"/><text x="398.7" y="178" fill="#e2e8f0">73.6%</text><text x="170" y="226" fill="#94a3b8" font-size="11">Sensitivity on the 2017-2018 test cycle</text></svg><p>With a single threshold, blood-pressure sensitivity is 50.6% under 50. Thresholds chosen separately on validation data equalize it near 73%, at a higher overall referral rate (56%).</p></div>
+<div class="card"><h3>Operating-point trade-off</h3><svg viewBox="0 0 520 285" role="img" aria-label="Blood pressure operating points" xmlns="http://www.w3.org/2000/svg" font-family="Inter,system-ui,sans-serif" font-size="12"><line x1="50" x2="500" y1="235.0" y2="235.0" stroke="#1e2d45"/><text x="42" y="239.0" fill="#94a3b8" text-anchor="end" font-size="11">0%</text><text x="50.0" y="251" fill="#94a3b8" text-anchor="middle" font-size="11">0%</text><line x1="50" x2="500" y1="180.0" y2="180.0" stroke="#1e2d45"/><text x="42" y="184.0" fill="#94a3b8" text-anchor="end" font-size="11">25%</text><text x="162.5" y="251" fill="#94a3b8" text-anchor="middle" font-size="11">25%</text><line x1="50" x2="500" y1="125.0" y2="125.0" stroke="#1e2d45"/><text x="42" y="129.0" fill="#94a3b8" text-anchor="end" font-size="11">50%</text><text x="275.0" y="251" fill="#94a3b8" text-anchor="middle" font-size="11">50%</text><line x1="50" x2="500" y1="70.0" y2="70.0" stroke="#1e2d45"/><text x="42" y="74.0" fill="#94a3b8" text-anchor="end" font-size="11">75%</text><text x="387.5" y="251" fill="#94a3b8" text-anchor="middle" font-size="11">75%</text><line x1="50" x2="500" y1="15.0" y2="15.0" stroke="#1e2d45"/><text x="42" y="19.0" fill="#94a3b8" text-anchor="end" font-size="11">100%</text><text x="500.0" y="251" fill="#94a3b8" text-anchor="middle" font-size="11">100%</text><line x1="50" y1="235" x2="500" y2="15" stroke="#94a3b8" stroke-dasharray="4 4"/><polyline points="246.8,85.5 283.6,66.9 361.2,40.4 405.3,30.5" fill="none" stroke="#6366f1" stroke-width="2.5"/><circle cx="246.8" cy="85.5" r="5" fill="#6366f1"/><text x="254.8" y="101.5" fill="#e2e8f0" font-size="11">70% target</text><circle cx="283.6" cy="66.9" r="5" fill="#6366f1"/><text x="291.6" y="82.9" fill="#e2e8f0" font-size="11">80% target</text><circle cx="361.2" cy="40.4" r="5" fill="#6366f1"/><text x="369.2" y="56.4" fill="#e2e8f0" font-size="11">90% target</text><circle cx="405.3" cy="30.5" r="5" fill="#6366f1"/><text x="413.3" y="46.5" fill="#e2e8f0" font-size="11">95% target</text><rect x="295.7" y="66.7" width="8" height="8" fill="#fbbf24"/><rect x="216.7" y="103.1" width="8" height="8" fill="#fbbf24"/><rect x="199.4" y="142.0" width="8" height="8" fill="#fbbf24"/><rect x="331.2" y="53.2" width="8" height="8" fill="#fbbf24"/><text x="275.0" y="269" fill="#94a3b8" text-anchor="middle" font-size="11">Fraction referred</text></svg><p>Raising the validation target from 80% to 95% lifts blood-pressure referral from 51.9% to 79.0%. Blue points are the model at four validation targets; yellow squares are fixed age or BMI rules and an age-only model. A simple age rule is a strong competitor.</p></div>
+<div class="card"><h3>Other checks</h3><ul class="clean"><li>Calibration slopes 0.88 (HbA1c) and 0.85 (BP); the later cycle has higher prevalence than predicted.</li><li>Developing on 2017-2018 and testing on 2015-2016 gives AUROC 0.767 and 0.731.</li><li>Adding smoking and vigorous recreation lowered HbA1c AUROC by 0.020 (paired interval excludes zero).</li><li>Masking 20% of inputs cuts BP sensitivity from 76.4% to 54.9%.</li></ul></div>
+</div></div></section>
+
+<section id="security"><div class="wrap">
+<span class="eyebrow">Security</span>
+<h2>Tested like an attacker, not just a test vector</h2>
+<p class="lead">Beyond 1,200 fixed functional trials, 4,000 random single-bit mutations of every envelope field were rejected, including mutations re-signed with the legitimate key so only the KEM and AEAD layers could catch them.</p>
+<div class="grid">
+<div class="card"><h3>Median cost per operation</h3><svg viewBox="0 0 520 208" role="img" aria-label="bar chart" xmlns="http://www.w3.org/2000/svg" font-family="Inter,system-ui,sans-serif" font-size="12"><text x="142" y="25" fill="#94a3b8" text-anchor="end">ML-KEM-768 encaps</text><rect x="150" y="13" width="2.0" height="16" rx="4" fill="#22d3ee"/><text x="160.0" y="26" fill="#e2e8f0">0.044 ms</text><text x="142" y="55" fill="#94a3b8" text-anchor="end">ML-KEM-768 decaps</text><rect x="150" y="43" width="2.6" height="16" rx="4" fill="#22d3ee"/><text x="160.6" y="56" fill="#e2e8f0">0.059 ms</text><text x="142" y="85" fill="#94a3b8" text-anchor="end">ML-DSA-44 verify</text><rect x="150" y="73" width="3.6" height="16" rx="4" fill="#6366f1"/><text x="161.6" y="86" fill="#e2e8f0">0.079 ms</text><text x="142" y="115" fill="#94a3b8" text-anchor="end">ML-DSA-44 sign</text><rect x="150" y="103" width="188.9" height="16" rx="4" fill="#6366f1"/><text x="346.9" y="116" fill="#e2e8f0">4.220 ms</text><text x="142" y="145" fill="#94a3b8" text-anchor="end">Envelope verify decrypt</text><rect x="150" y="133" width="9.9" height="16" rx="4" fill="#34d399"/><text x="167.9" y="146" fill="#e2e8f0">0.222 ms</text><text x="142" y="175" fill="#94a3b8" text-anchor="end">Envelope seal</text><rect x="150" y="163" width="285.7" height="16" rx="4" fill="#34d399"/><text x="443.7" y="176" fill="#e2e8f0">6.381 ms</text></svg><p>Python-level timings on one host; run-to-run variation is large, so read them as orders of magnitude.</p></div>
+<div class="card"><h3>Hybrid versus classical</h3><ul class="clean"><li>Seal: 4.43 ms vs 0.067 ms for an X25519 + Ed25519 baseline.</li><li>Open: 0.19 ms vs 0.081 ms.</li><li>Size: 7,551 bytes (hex JSON with metadata) vs 175 raw bytes.</li><li>The two cards come from separate runs, which is why the seal times differ.</li><li>ML-KEM-768 ciphertext 1,088 B; ML-DSA-44 signature 2,420 B.</li></ul></div>
+</div></div></section>
+
+<section id="reproduce"><div class="wrap">
+<span class="eyebrow">Reproduce</span>
+<h2>Every number regenerates from raw CDC files</h2>
+<p class="lead">CI downloads the 16 public NHANES files, validates their digests, reruns everything and executes the 27 tests on every push.</p>
+<pre>python -m venv .venv &amp;&amp; source .venv/bin/activate
+python -m pip install -r requirements.txt
+python src/study.py              # primary study
+python src/security.py           # functional trials
+python src/extended.py           # robustness analyses
+python src/security_extended.py  # mutation fuzz, cost comparison
+python -m unittest discover -s tests -v</pre>
+</div></section>
+
+<section id="scope"><div class="wrap">
+<span class="eyebrow">Scope, stated plainly</span>
+<h2>What this is not</h2>
+<ul class="clean">
+<li>Not clinically validated. Endpoints are single-examination screening proxies, not confirmed diagnoses.</li>
+<li>The primary analysis is unweighted; proportions are not national prevalence estimates.</li>
+<li>The envelope is a single-process application harness: no TLS integration, PKI, revocation, persistent replay state, forward secrecy, side-channel evaluation or FIPS 140 validation.</li>
+<li>The ISO control matrix is a proposed crosswalk, not a certification.</li>
+</ul>
+</div></section>
+
+<footer><div class="wrap">Sunil Gentyala, Suresh Kumar Darisi, Vahiduddin Shariff, Akhila Kasturi, Krishna Reddy Padala &middot; MIT license &middot; AI assistance (Claude) used for code and analysis; authors take responsibility. <a href="https://github.com/sunilgentyala/qshield-cardio">Source</a></div></footer>
+</body></html>

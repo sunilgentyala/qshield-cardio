@@ -9,9 +9,12 @@
 [![Tests](https://img.shields.io/badge/tests-27%20passing-22c55e?style=flat-square)](tests/)
 [![Data](https://img.shields.io/badge/data-public%20NHANES-0a66c2?style=flat-square)](data/sources.json)
 [![Status](https://img.shields.io/badge/status-research%20only-f59e0b?style=flat-square)](#scope-stated-plainly)
+[![Website](https://img.shields.io/badge/Website-Live-6366f1?style=flat-square&logo=github)](https://sunilgentyala.github.io/qshield-cardio/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)](LICENSE)
 
 </div>
+
+**Project page:** https://sunilgentyala.github.io/qshield-cardio/
 
 > **Research software. The models have not established clinical safety or effectiveness.** They must not determine eligibility for routine blood-pressure checks, diagnose disease, prescribe treatment or override clinical judgment.
 
@@ -66,6 +69,7 @@ python -m unittest discover -s tests -v
 | `src/infer.py` | Research inference after checking a trusted manifest digest |
 | `tests/` | 27 regression tests (cohort rules, digests, thresholds, envelope, extended-result consistency, fuzz) |
 | `results/` | Numerical outputs, predictions, split manifest |
+| `tools/build_site.py` | Generates the project page (`docs/index.html`) from `results/` |
 | `docs/iso_control_matrix.csv` | Proposed ISO/IEC 27002 control evidence matrix |
 
 ## Research inference example
