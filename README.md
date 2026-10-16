@@ -10,6 +10,7 @@
 [![Data](https://img.shields.io/badge/data-public%20NHANES-0a66c2?style=flat-square)](data/sources.json)
 [![Status](https://img.shields.io/badge/status-research%20only-f59e0b?style=flat-square)](#scope-stated-plainly)
 [![Website](https://img.shields.io/badge/Website-Live-6366f1?style=flat-square&logo=github)](https://sunilgentyala.com/qshield-cardio/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23409159.svg)](https://doi.org/10.5281/zenodo.23409159)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)](LICENSE)
 
 </div>
@@ -96,6 +97,10 @@ Sunil Gentyala, Suresh Kumar Darisi, Vahiduddin Shariff, Akhila Kasturi, S. M. K
 ## Transparency
 
 AI assistance (Claude, Anthropic) was used for code, analysis scripts and verification; the authors review and take responsibility for the work. CDC data and third-party software retain their own terms.
+
+## Citation
+
+Cite the software with the Zenodo DOI for all versions, https://doi.org/10.5281/zenodo.23409159 (v0.2.0: https://doi.org/10.5281/zenodo.23409160), or use `CITATION.cff`.
 
 ## License
 

@@ -4,6 +4,7 @@ title: "QShield Cardio: temporally validated diabetes and hypertension screening
 type: software
 version: 0.2.0
 license: MIT
+doi: 10.5281/zenodo.23409159
 repository-code: "https://github.com/sunilgentyala/qshield-cardio"
 authors:
   - family-names: Gentyala
